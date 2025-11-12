@@ -10,6 +10,6 @@ export default defineConfig({
     tailwindcss()
   ],
   build: {
-    outDir: 'build'  // <-- change 'dist' en 'build' si tu veux garder ton script
+    outDir: 'dist'  // <-- change 'dist' en 'build' si tu veux garder ton script
   }
 })
