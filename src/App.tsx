@@ -24,39 +24,32 @@ Au-delà des aspects techniques, cette expérience m’a permis de progresser la
 1. Compétences techniques
 
 a) Utilisation d’outils logistiques
-
 •	Maîtrise du transpalette T-20 : compétence essentielle en manutention pour déplacer des charges lourdes efficacement et en sécurité.
 •	Utilisation du Symbol pour la gestion des stocks : compétence en informatique logistique, saisie de données et suivi des flux de produits.
 •	Utilisation de la plastifieuse pour sécuriser les palettes : savoir-faire en emballage et préparation des expéditions.
 
 b) Gestion des stocks
-
 •	Procédures de réception, étiquetage, rangement : aptitude à organiser les flux entrants de manière structurée.
 •	Réalisation d’inventaires et de réapprovisionnements : capacité à maintenir un stock juste et à anticiper les besoins.
 
 c) Sécurité
-
 •	Respect des normes de sécurité et utilisation des EPI (Équipements de Protection Individuelle).
 •	Adoption de gestes de manutention appropriés.
 
 2. Compétences transversales (soft skills)
 
 a) Adaptabilité
-
 •	Intégration dans un environnement culturel, linguistique et professionnel nouveau.
 •	Résolution des difficultés administratives et adaptation aux situations imprévues.
 
 b) Travail en équipe
-
 •	Collaboration pour le port de charges lourdes, la gestion des incidents et le partage d’informations.
 
 c) Autonomie et sens de l’organisation
-
 •	Prise en charge de missions confiées rapidement, gestion du temps et planification autonome.
 •	Capacité à organiser votre mode de fonctionnement pour optimiser l’efficacité.
 
 d) Compétences linguistiques
-
 •	Maîtrise de l’espagnol dans un cadre professionnel.
 `
 
@@ -70,19 +63,16 @@ d) Compétences linguistiques
 Ces compétences concernent directement la maîtrise d’outils et méthodes utilisés dans un environnement industriel et administratif :
 
 a) Maîtrise des logiciels et outils numériques
-
 •\tPower BI : création et optimisation de rapports interactifs, cartographie des utilisateurs et gestion des accès.
 •\tExcel : manipulation avancée de données pour l’organisation et le traitement des informations.
 •\tOutlook et Webex : communication et coordination avec les collaborateurs à distance.
 
 b) Gestion de données et reporting
-
 •\tCollecte et organisation de tables de données pour créer des rapports structurés.
 •\tSynthèse et résumé des accès utilisateurs sur différents rapports et espaces de travail.
 •\tRéflexion sur l’automatisation de la collecte de données via des API ou des scripts Python (Selenium).
 
 c) Compréhension des processus industriels
-
 •\tDécouverte des pôles de production, R&D et administration.
 •\tAnalyse du fonctionnement des services et interactions inter-départements.
 
@@ -90,27 +80,22 @@ c) Compréhension des processus industriels
 2. Compétences transversales
 
 a) Autonomie et initiative
-
 •\tCapacité à chercher des informations, réfléchir et expérimenter pour résoudre des problèmes sans résultats immédiats.
 •\tGestion autonome du temps et des priorités pour mener à bien les missions.
 
 b) Résolution de problèmes
-
 •\tAnalyse des problèmes liés aux accès et à l’administration de Power BI.
 •\tExploration de solutions techniques (API, scripts) malgré les contraintes d’accès.
 
 c) Adaptabilité et apprentissage rapide
-
 •\tPrise en main rapide de Power BI et d’outils collaboratifs.
 •\tAdaptation à un environnement industriel et à la culture d’entreprise.
 
 d) Communication et relationnel
-
 •\tInteraction quotidienne avec la maître de stage et différents collaborateurs via les points « One-to-One ».
 •\tParticipation à réunions inter-services, découverte des métiers et échanges d’informations.
 
 e) Organisation et rigueur
-
 •\tStructuration des données et rapports pour une vue globale et compréhensible.
 •\tSuivi rigoureux des missions et gestion des tâches sur plusieurs semaines.
 `
@@ -159,7 +144,25 @@ c) Autonomie et prise d’initiative
         {
             title: "Marathon relais étud'Angers",
             img: marathonImg,
-            description: "en cours...",
+            description: "En collaboration avec Laurent FAUVEAU, étudiants en cycle d’ingénieur à l’ESAIP dans lequel l’engagement associatif représente pour nous un engouement fort et Adhérents de l’Association de Coopération Sportive avec l’Afrique et Bamako (ACSAB) ainsi que d’Angers Terre d’Athlétisme (ATA), nous avons pour ambition de valoriser la vie étudiante à Angers, favoriser l’activité sportive et soutenir des projets solidaire à travers une manifestation sportive.\n\n" +
+                "Ce projet, organisé par une vingtaine d’étudiants, consiste à organiser un marathon relais axé aux étudiants tout en restant ouvert à tous les publics. Celui-ci se déroulera le dimanche 8 octobre 2026, et s’agira d’un événement sans précédent réunissant un maximum de 4000 coureurs, par équipe de 3 à 6 personnes. Sur tout le long de ce parcours urbain, nous retrouverons les principaux sites de l’enseignement supérieur (UA, Arts et métiers, ESA, UCO et ESEO) et de nombreuses animations !\n\n" +
+                "Compétences organisationnelles :\n" +
+                "\n" +
+                "•\tGestion de projet événementiel - planification d’un événement d’envergure (4000 participants, coordination de 20 étudiants).\n" +
+                "•\tCommunication et relations publiques - promotion de l’événement, partenariats avec les écoles et institutions locales.\n" +
+                "•\tLogistique sportive - gestion du parcours, de la sécurité, du matériel et de la coordination des équipes le jour J.\n" +
+                "•\tGestion administrative - démarches auprès de la mairie, associations et organismes d’assurance.\n" +
+                "•\tRecherche de financements et sponsoring - conception de dossiers partenaires, contact avec les entreprises locales.\n" +
+                "•\tGestion d’équipe et coordination - répartition des rôles, animation de réunions, suivi des avancées.\n" +
+                "\n" +
+                "Compétences transversales :\n" +
+                "\n" +
+                "•\tLeadership - mobilisation et encadrement d’une équipe pluridisciplinaire.\n" +
+                "•\tTravail d’équipe - collaboration avec d’autres étudiants et associations (ACSAB, ATA).\n" +
+                "•\tOrganisation et rigueur - planification sur plusieurs mois, suivi de nombreuses tâches simultanées.\n" +
+                "•\tAdaptabilité - gestion des imprévus administratifs, techniques ou humains.\n" +
+                "•\tCommunication interpersonnelle - échanges avec les partenaires, collectivités et participants.\n" +
+                "•\tSens de l’engagement et responsabilité - projet à vocation solidaire et citoyenne alliant sport et entraide.\n",
         },
     ];
 
@@ -217,7 +220,12 @@ c) Autonomie et prise d’initiative
             >
                 <div className="lg:w-1/2">
                     <h3 className="text-3xl font-bold mb-4">À propos de moi</h3>
-                    <p className="mb-4">Ces dernières années, j’ai eu des expériences très différentes mais toutes
+                    <p className="mb-4">
+                        Je m'appelle Delvin, je suis en 4ème année de cycle ingénieur en informatique et réseaux spécialisé en IA.
+                    </p>
+                    <p className="mb-4">
+
+                        Ces dernières années, j’ai eu des expériences très différentes mais toutes
                         marquantes : j’ai développé des outils d’aide à l’administration en stage chez Parker Meggitt,
                         renforcé mes compétences techniques et mon ouverture culturelle lors d’un Erasmus en Lituanie,
                         et plus récemment, à Madrid, chez Decathlon, j’ai travaillé dans un environnement logistique
@@ -237,7 +245,7 @@ c) Autonomie et prise d’initiative
                 <div className="lg:w-1/2 flex flex-col items-center gap-6">
                     <div className="avatar">
                         <div className="w-56 rounded-full ring ring-white/40 ring-offset-[#161616]/80 ring-offset-2">
-                            <img src="https://via.placeholder.com/256" alt="Delvin"/>
+                            <img src={"src/assets/projects/avatar.jpg"} alt="Delvin"/>
                         </div>
                     </div>
 
@@ -304,7 +312,7 @@ c) Autonomie et prise d’initiative
                         </p>
                         <div className="flex justify-center">
                             <button
-                                className="btn btn-outline text-white"
+                                className="btn btn-outline text-white rounded-3xl"
                                 onClick={() => setSelectedExperience(null)}
                             >
                                 Retour
@@ -349,7 +357,7 @@ c) Autonomie et prise d’initiative
                         <p className="whitespace-pre-line text-lg mb-8 text-gray-300">{volunteerProjects[selectedProject].description}</p>
                         <div className="flex justify-center">
                             <button
-                                className="btn btn-outline text-white"
+                                className="btn btn-outline text-white rounded-3xl"
                                 onClick={() => setSelectedProject(null)}
                             >
                                 Retour
