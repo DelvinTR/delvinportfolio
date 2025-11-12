@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import kartonImg from "./assets/projects/karton.png";
 import marathonImg from "./assets/projects/marathon.png";
-import avatar from "../assets/projects/avatar.jpg";
+import avatar from "./assets/projects/avatar.jpg";
 
 const Accueil: React.FC = () => {
     const [selectedExperience, setSelectedExperience] = useState<number | null>(null);
