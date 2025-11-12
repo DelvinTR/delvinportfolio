@@ -173,7 +173,7 @@ c) Autonomie et prise d’initiative
             <header className="sticky top-0 z-50">
                 <div className="relative flex justify-center p-4 bg-black/30 backdrop-blur-md rounded-b-3xl">
                     <ul className="relative flex gap-6">
-                        {["Accueil", "À propos", "Expériences", "Bénévolats", "Compétences", "Passions"].map((item, idx) => (
+                        {["Accueil", "À propos", "Expériences", "Bénévolats", "Compétences"].map((item, idx) => (
                             <li key={idx} className="relative">
                                 <a
                                     href={`#${item.toLowerCase().replace(/\s+/g, "")}`}
@@ -386,28 +386,6 @@ c) Autonomie et prise d’initiative
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            {/* Passions */}
-            <section id="passions" className="h-screen w-full flex flex-col items-center justify-center py-16">
-                <h3 className="text-4xl font-bold mb-12" data-aos="fade-up">Mes Passions</h3>
-                <div className="flex flex-wrap justify-center items-center gap-8 max-w-7xl w-full">
-                    {[
-                        "https://cdn.pixabay.com/photo/2015/09/09/18/08/race-932254_1280.jpg",
-                        "https://www.w3schools.com/html/movie.mp4",
-                        "https://www.w3schools.com/html/mov_bbb.mp4",
-                        "https://www.w3schools.com/html/movie.mp4",
-                    ].map((video, idx) => (
-                        <div
-                            key={idx}
-                            className={`bg-white/5 border border-white/20 rounded-xl overflow-hidden shadow-2xl hover:scale-105 transition-transform duration-300 ${idx % 2 === 0 ? "w-80 h-48" : "w-64 h-40"}`}
-                            data-aos="zoom-in"
-                            data-aos-delay={idx * 150}
-                        >
-                            <video src={video} autoPlay loop muted className="w-full h-full object-cover"></video>
-                        </div>
-                    ))}
                 </div>
             </section>
 
