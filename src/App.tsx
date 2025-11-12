@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import kartonImg from "./assets/projects/marathon.png";
+import kartonImg from "./assets/projects/karton.png";
 import marathonImg from "./assets/projects/marathon.png";
 
 const Accueil: React.FC = () => {
