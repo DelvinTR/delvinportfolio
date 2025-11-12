@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import kartonImg from "./assets/projects/karton.png";
 import marathonImg from "./assets/projects/marathon.png";
+import avatar from "../assets/projects/avatar.jpg";
 
 const Accueil: React.FC = () => {
     const [selectedExperience, setSelectedExperience] = useState<number | null>(null);
@@ -245,7 +246,7 @@ c) Autonomie et prise d’initiative
                 <div className="lg:w-1/2 flex flex-col items-center gap-6">
                     <div className="avatar">
                         <div className="w-56 rounded-full ring ring-white/40 ring-offset-[#161616]/80 ring-offset-2">
-                            <img src="src/assets/projects/avatar.jpg" alt="Delvin"/>
+                            <img src={avatar} alt="Delvin"/>
                         </div>
                     </div>
 
