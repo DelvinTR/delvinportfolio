@@ -4,12 +4,11 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/portfolio/", // <- IMPORTANT pour GitHub Pages
+  build: {
+    outDir: 'dist'  // <-- change 'dist' en 'build' si tu veux garder ton script
+  },
   plugins: [
     react(),
     tailwindcss()
   ],
-  build: {
-    outDir: 'dist'  // <-- change 'dist' en 'build' si tu veux garder ton script
-  }
 })
