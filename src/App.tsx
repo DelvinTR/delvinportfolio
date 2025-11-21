@@ -6,8 +6,23 @@ import marathonImg from "./assets/projects/marathon.png";
 import avatar from "./assets/projects/avatar.jpg";
 
 const Accueil: React.FC = () => {
+    // États pour gérer l'ouverture des détails
     const [selectedExperience, setSelectedExperience] = useState<number | null>(null);
     const [selectedProject, setSelectedProject] = useState<number | null>(null);
+
+    // --- FONCTIONS DE GESTION (Logique d'exclusion mutuelle) ---
+
+    // Ouvrir une expérience ferme les projets
+    const handleOpenExperience = (index: number) => {
+        setSelectedExperience(index);
+        setSelectedProject(null); // Ferme le projet si ouvert
+    };
+
+    // Ouvrir un projet ferme les expériences
+    const handleOpenProject = (index: number) => {
+        setSelectedProject(index);
+        setSelectedExperience(null); // Ferme l'expérience si ouverte
+    };
 
     const experiences = [
         {
@@ -25,33 +40,33 @@ Au-delà des aspects techniques, cette expérience m’a permis de progresser la
 1. Compétences techniques
 
 a) Utilisation d’outils logistiques
-•	Maîtrise du transpalette T-20 : compétence essentielle en manutention pour déplacer des charges lourdes efficacement et en sécurité.
-•	Utilisation du Symbol pour la gestion des stocks : compétence en informatique logistique, saisie de données et suivi des flux de produits.
-•	Utilisation de la plastifieuse pour sécuriser les palettes : savoir-faire en emballage et préparation des expéditions.
+•   Maîtrise du transpalette T-20 : compétence essentielle en manutention pour déplacer des charges lourdes efficacement et en sécurité.
+•   Utilisation du Symbol pour la gestion des stocks : compétence en informatique logistique, saisie de données et suivi des flux de produits.
+•   Utilisation de la plastifieuse pour sécuriser les palettes : savoir-faire en emballage et préparation des expéditions.
 
 b) Gestion des stocks
-•	Procédures de réception, étiquetage, rangement : aptitude à organiser les flux entrants de manière structurée.
-•	Réalisation d’inventaires et de réapprovisionnements : capacité à maintenir un stock juste et à anticiper les besoins.
+•   Procédures de réception, étiquetage, rangement : aptitude à organiser les flux entrants de manière structurée.
+•   Réalisation d’inventaires et de réapprovisionnements : capacité à maintenir un stock juste et à anticiper les besoins.
 
 c) Sécurité
-•	Respect des normes de sécurité et utilisation des EPI (Équipements de Protection Individuelle).
-•	Adoption de gestes de manutention appropriés.
+•   Respect des normes de sécurité et utilisation des EPI (Équipements de Protection Individuelle).
+•   Adoption de gestes de manutention appropriés.
 
 2. Compétences transversales (soft skills)
 
 a) Adaptabilité
-•	Intégration dans un environnement culturel, linguistique et professionnel nouveau.
-•	Résolution des difficultés administratives et adaptation aux situations imprévues.
+•   Intégration dans un environnement culturel, linguistique et professionnel nouveau.
+•   Résolution des difficultés administratives et adaptation aux situations imprévues.
 
 b) Travail en équipe
-•	Collaboration pour le port de charges lourdes, la gestion des incidents et le partage d’informations.
+•   Collaboration pour le port de charges lourdes, la gestion des incidents et le partage d’informations.
 
 c) Autonomie et sens de l’organisation
-•	Prise en charge de missions confiées rapidement, gestion du temps et planification autonome.
-•	Capacité à organiser votre mode de fonctionnement pour optimiser l’efficacité.
+•   Prise en charge de missions confiées rapidement, gestion du temps et planification autonome.
+•   Capacité à organiser votre mode de fonctionnement pour optimiser l’efficacité.
 
 d) Compétences linguistiques
-•	Maîtrise de l’espagnol dans un cadre professionnel.
+•   Maîtrise de l’espagnol dans un cadre professionnel.
 `
 
         },
@@ -115,30 +130,30 @@ En parallèle, j’ai créé le club Kart’ON au sein de l’ESAIP dans le but 
 1. Compétences organisationnelles
 
 a) Gestion de projet
-•	Organisation complète d’un événement : définition du concept, planification des activités, préparation logistique et coordination des participants.
-•	Création et suivi d’un calendrier de tâches pour respecter les délais et gérer les différentes étapes.
+•   Organisation complète d’un événement : définition du concept, planification des activités, préparation logistique et coordination des participants.
+•   Création et suivi d’un calendrier de tâches pour respecter les délais et gérer les différentes étapes.
 b) Communication professionnelle
-•	Rédaction et gestion d’un dossier de sponsoring pour contacter des entreprises.
-•	Relation avec la propriétaire de la piste automobile, les participants et les écoles partenaires.
-•	Coordination avec collaborateurs externes issus d’autres écoles.
+•   Rédaction et gestion d’un dossier de sponsoring pour contacter des entreprises.
+•   Relation avec la propriétaire de la piste automobile, les participants et les écoles partenaires.
+•   Coordination avec collaborateurs externes issus d’autres écoles.
 c) Compétences logistiques
-•	Gestion des tee-shirts et supports matériels pour représenter le club.
-•	Préparation d’une course intermédiaire pour tester l’organisation et les équipes.
+•   Gestion des tee-shirts et supports matériels pour représenter le club.
+•   Préparation d’une course intermédiaire pour tester l’organisation et les équipes.
 d) Création visuelle et design
-•	Conception des tee-shirts et collaboration avec un designer pour créer de nouveaux visuels.
-•	Mise en place d’une identité visuelle cohérente pour l’événement et le club Kart’ON.
+•   Conception des tee-shirts et collaboration avec un designer pour créer de nouveaux visuels.
+•   Mise en place d’une identité visuelle cohérente pour l’événement et le club Kart’ON.
 
 2. Compétences transversales
 
 a) Leadership et gestion d’équipe
-•	Encadrement et coordination de collaborateurs internes et externes.
-•	Délégation de missions pour assurer la réussite des différentes activités.
+•   Encadrement et coordination de collaborateurs internes et externes.
+•   Délégation de missions pour assurer la réussite des différentes activités.
 b) Esprit d’équipe et coopération
-•	Collaboration avec des étudiants de différentes écoles et disciplines.
-•	Participation active dans toutes les phases du projet, en aidant les membres de l’équipe.
+•   Collaboration avec des étudiants de différentes écoles et disciplines.
+•   Participation active dans toutes les phases du projet, en aidant les membres de l’équipe.
 c) Autonomie et prise d’initiative
-•	Organisation des activités, contact avec les partenaires et suivi administratif en autonomie.
-•	Capacité à proposer des solutions pour contourner des difficultés (ex : conception d’une course intermédiaire).
+•   Organisation des activités, contact avec les partenaires et suivi administratif en autonomie.
+•   Capacité à proposer des solutions pour contourner des difficultés (ex : conception d’une course intermédiaire).
 
 ` ,
         },
@@ -172,16 +187,16 @@ c) Autonomie et prise d’initiative
     }, []);
 
     return (
-        <div className="bg-[#161616] text-white min-h-screen">
+        <div className="bg-[#161616] text-white min-h-screen scroll-smooth">
             {/* Navbar */}
             <header className="sticky top-0 z-50">
-                <div className="relative flex justify-center p-4 bg-black/30 backdrop-blur-md rounded-b-3xl">
+                <div className="relative flex justify-center p-4 bg-black/30 backdrop-blur-md rounded-b-3xl shadow-lg">
                     <ul className="relative flex gap-6">
                         {["Accueil", "À propos", "Expériences", "Bénévolats", "Compétences"].map((item, idx) => (
                             <li key={idx} className="relative">
                                 <a
                                     href={`#${item.toLowerCase().replace(/\s+/g, "")}`}
-                                    className="relative px-4 py-2 rounded-full hover:bg-white/5 transition-colors duration-300"
+                                    className="relative px-4 py-2 rounded-full hover:bg-white/10 hover:text-gray-200 transition-all duration-300"
                                 >
                                     {item}
                                 </a>
@@ -198,8 +213,8 @@ c) Autonomie et prise d’initiative
                 className="h-screen flex flex-col justify-center items-center text-center px-4"
                 data-aos="fade-up"
             >
-                <h1 className="text-6xl font-extrabold mb-4 text-gray-100">Bienvenue sur mon Portfolio !</h1>
-                <h2 className="text-2xl text-gray-300 mb-6">
+                <h1 className="text-6xl font-extrabold mb-4 text-gray-100 tracking-tight">Bienvenue sur mon Portfolio !</h1>
+                <h2 className="text-2xl text-gray-300 mb-6 font-light">
                     Je m'appelle Delvin, étudiant ingénieur spécialisé en IA
                 </h2>
 
@@ -207,7 +222,7 @@ c) Autonomie et prise d’initiative
                 <a
                     href="/CV-Delvin_TRAN.pdf"
                     download
-                    className="bg-white/10 text-gray-100 px-6 py-3 rounded-full font-semibold hover:bg-white/20 transition-colors duration-300"
+                    className="bg-white/10 text-gray-100 px-8 py-3 rounded-full font-semibold hover:bg-white/20 transition-all duration-300 border border-white/10 hover:scale-105"
                 >
                     Télécharger mon CV
                 </a>
@@ -216,57 +231,61 @@ c) Autonomie et prise d’initiative
             {/* About */}
             <section
                 id="àpropos"
-                className="h-screen flex flex-col lg:flex-row justify-center items-center gap-8 px-8"
+                className="min-h-screen flex flex-col lg:flex-row justify-center items-center gap-12 px-8 py-16"
                 data-aos="fade-right"
             >
-                <div className="lg:w-1/2">
-                    <h3 className="text-3xl font-bold mb-4">À propos de moi</h3>
-                    <p className="mb-4">
+                <div className="lg:w-1/2 leading-relaxed">
+                    <h3 className="text-4xl font-bold mb-6 border-l-4 border-blue-500 pl-4">À propos de moi</h3>
+                    <p className="mb-4 text-gray-300 text-lg">
                         Je m'appelle Delvin, je suis en 4ème année de cycle ingénieur en informatique et réseaux spécialisé en IA.
                     </p>
-                    <p className="mb-4">
-
+                    <p className="mb-4 text-gray-300">
                         Ces dernières années, j’ai eu des expériences très différentes mais toutes
                         marquantes : j’ai développé des outils d’aide à l’administration en stage chez Parker Meggitt,
                         renforcé mes compétences techniques et mon ouverture culturelle lors d’un Erasmus en Lituanie,
                         et plus récemment, à Madrid, chez Decathlon, j’ai travaillé dans un environnement logistique
-                        complexe</p>
-                    <p className="mb-4">À côté de mes études, j’ai aussi créé mes propres projets. Par exemple, un
+                        complexe
+                    </p>
+                    <p className="mb-4 text-gray-300">
+                        À côté de mes études, j’ai aussi créé mes propres projets. Par exemple, un
                         événement de karting étudiant qui a rassemblé plus de 100 participants. Aujourd’hui, l’événement
                         est mené à être pérennisé par d’autres étudiants angevins. En ce moment, je coorganise, avec une
                         équipe de 15 étudiants un marathon relais inter-écoles pour 2026. Ces expériences m’ont permis
                         de développer du leadership, de la créativité et surtout la capacité à fédérer une équipe autour
-                        d’un objectif.</p>
-                    <p className="mb-4">Au départ, je pensais m’orienter vers la cybersécurité. Mais en avançant, j’ai
+                        d’un objectif.
+                    </p>
+                    <p className="mb-4 text-gray-300">
+                        Au départ, je pensais m’orienter vers la cybersécurité. Mais en avançant, j’ai
                         découvert ce qui me passionne vraiment : la création et l’innovation, notamment dans
                         l’intelligence artificielle. Je veux utiliser l’IA comme un terrain de jeu pour inventer et
-                        construire de nouvelles solutions.</p>
+                        construire de nouvelles solutions.
+                    </p>
                 </div>
 
-                <div className="lg:w-1/2 flex flex-col items-center gap-6">
-                    <div className="avatar">
-                        <div className="w-56 rounded-full ring ring-white/40 ring-offset-[#161616]/80 ring-offset-2">
-                            <img src={avatar} alt="Delvin"/>
+                <div className="lg:w-1/2 flex flex-col items-center gap-8">
+                    <div className="avatar relative group">
+                        <div className="w-64 rounded-full ring ring-white/30 ring-offset-[#161616] ring-offset-4 transition-transform duration-500 group-hover:scale-105">
+                            <img src={avatar} alt="Delvin" className="object-cover"/>
                         </div>
                     </div>
 
-                    <div className="w-full max-w-md mt-8" data-aos="fade-up">
-                        <h4 className="text-xl font-bold mb-4 text-center">Mon Parcours</h4>
-                        <ul className="relative border-l border-gray-700 ml-4">
-                            <li className="mb-10 ml-6">
-                                <span className="absolute -left-3 w-6 h-6 bg-white rounded-full"></span>
-                                <h5 className="text-lg font-semibold">2019</h5>
-                                <p>Lycée David d'Angers (49)</p>
+                    <div className="w-full max-w-md mt-4" data-aos="fade-up" data-aos-delay="200">
+                        <h4 className="text-2xl font-bold mb-6 text-center">Mon Parcours</h4>
+                        <ul className="relative border-l-2 border-gray-700 ml-4 space-y-10">
+                            <li className="ml-8 relative">
+                                <span className="absolute -left-[41px] top-1 w-6 h-6 bg-gray-800 border-4 border-white rounded-full"></span>
+                                <h5 className="text-xl font-semibold text-white">2019</h5>
+                                <p className="text-gray-400">Lycée David d'Angers (49)</p>
                             </li>
-                            <li className="mb-10 ml-6">
-                                <span className="absolute -left-3 w-6 h-6 bg-white rounded-full"></span>
-                                <h5 className="text-lg font-semibold">2022</h5>
-                                <p>Classe préparatoire intégrée ESAIP (49)</p>
+                            <li className="ml-8 relative">
+                                <span className="absolute -left-[41px] top-1 w-6 h-6 bg-gray-800 border-4 border-white rounded-full"></span>
+                                <h5 className="text-xl font-semibold text-white">2022</h5>
+                                <p className="text-gray-400">Classe préparatoire intégrée ESAIP (49)</p>
                             </li>
-                            <li className="mb-10 ml-6">
-                                <span className="absolute -left-3 w-6 h-6 bg-white rounded-full"></span>
-                                <h5 className="text-lg font-semibold">Aujourd'hui</h5>
-                                <p>Cycle ingénieur en Informatique et Réseaux (49)</p>
+                            <li className="ml-8 relative">
+                                <span className="absolute -left-[41px] top-1 w-6 h-6 bg-blue-500 border-4 border-white rounded-full animate-pulse"></span>
+                                <h5 className="text-xl font-semibold text-white">Aujourd'hui</h5>
+                                <p className="text-gray-400">Cycle ingénieur en Informatique et Réseaux (49)</p>
                             </li>
                         </ul>
                     </div>
@@ -276,47 +295,62 @@ c) Autonomie et prise d’initiative
             {/* Expériences */}
             <section
                 id="expériences"
-                className="min-h-screen px-4 flex flex-col items-center justify-center py-16"
-                data-aos="fade-up"
+                className="min-h-screen px-4 flex flex-col items-center justify-center py-20 bg-gradient-to-b from-[#161616] to-[#1a1a1a]"
             >
-                <h3 className="text-3xl font-bold mb-10">Mes Expériences</h3>
+                <h3 className="text-4xl font-bold mb-12 text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">
+                    Mes Expériences
+                </h3>
 
                 {selectedExperience === null ? (
-                    <ul className="space-y-6 w-full max-w-4xl">
+                    <ul className="space-y-8 w-full max-w-4xl">
                         {experiences.map((exp, idx) => (
                             <li
                                 key={idx}
-                                className="relative border border-white/20 rounded-3xl p-6 bg-white/5 shadow-2xl hover:bg-white/10 transition cursor-pointer"
-                                onClick={() => setSelectedExperience(idx)}
+                                className="relative group border border-white/10 rounded-3xl p-8 bg-white/5 shadow-lg hover:bg-white/10 hover:border-white/30 transition-all duration-300 cursor-pointer"
+                                onClick={() => handleOpenExperience(idx)}
                                 data-aos="fade-up"
                             >
-                                <span
-                                    className="absolute -left-4 top-1/2 transform -translate-y-1/2 w-6 h-6 bg-white rounded-full"></span>
-                                <div className="ml-4">
-                                    <h4 className="text-xl font-bold mb-1">{exp.title}</h4>
-                                    <span className="text-sm text-gray-300">{exp.period}</span>
-                                    <p className="mt-2 text-gray-300">{exp.summary}</p>
+                                <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                                    <h4 className="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors">{exp.title}</h4>
+                                    <span className="text-sm font-mono text-blue-300 bg-blue-900/30 px-3 py-1 rounded-full w-fit mt-2 md:mt-0">{exp.period}</span>
                                 </div>
+                                <p className="text-gray-300 font-medium mb-2">{exp.summary}</p>
+                                <p className="text-gray-500 text-sm mt-4 flex items-center gap-2">
+                                    <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                                    Cliquez pour voir les détails
+                                </p>
                             </li>
                         ))}
                     </ul>
                 ) : (
                     <div
-                        className="w-full max-w-5xl text-left rounded-3xl p-12 bg-white/10 shadow-2xl transition-all duration-500"
-                        data-aos="fade-up"
+                        key={`exp-${selectedExperience}`}
+                        className="w-full max-w-5xl text-left rounded-3xl p-8 md:p-12 bg-[#1e1e1e] border border-white/10 shadow-2xl transition-all duration-500"
+                        data-aos="zoom-in"
                     >
-                        <h4 className="text-3xl font-bold mb-4">{experiences[selectedExperience].title}</h4>
-                        <span
-                            className="text-sm text-gray-300 mb-6 block">{experiences[selectedExperience].period}</span>
-                        <p className="whitespace-pre-line text-lg mb-8 text-gray-100">
-                            {experiences[selectedExperience].description}
-                        </p>
-                        <div className="flex justify-center">
+                        <div className="flex justify-between items-start mb-6">
+                            <div>
+                                <h4 className="text-3xl font-bold text-white">{experiences[selectedExperience].title}</h4>
+                                <span className="text-blue-400 font-mono">{experiences[selectedExperience].period}</span>
+                            </div>
                             <button
-                                className="btn btn-outline text-white rounded-3xl"
+                                className="btn btn-circle btn-outline btn-sm text-white hover:bg-white hover:text-black transition-colors"
                                 onClick={() => setSelectedExperience(null)}
                             >
-                                Retour
+                                ✕
+                            </button>
+                        </div>
+
+                        <div className="prose prose-invert max-w-none whitespace-pre-line text-gray-300 leading-relaxed">
+                            {experiences[selectedExperience].description}
+                        </div>
+
+                        <div className="flex justify-center mt-10">
+                            <button
+                                className="px-8 py-3 border border-white/30 rounded-full text-white hover:bg-white hover:text-black transition-all duration-300"
+                                onClick={() => setSelectedExperience(null)}
+                            >
+                                Fermer les détails
                             </button>
                         </div>
                     </div>
@@ -326,71 +360,122 @@ c) Autonomie et prise d’initiative
             {/* Projets bénévoles */}
             <section
                 id="bénévolats"
-                className="h-screen px-4 flex flex-col items-center justify-center py-16"
+                className="min-h-screen px-4 flex flex-col items-center justify-center py-20"
             >
-                <h3 className="text-3xl font-bold mb-6">Projets Bénévoles</h3>
+                <h3 className="text-4xl font-bold mb-12 text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">
+                    Projets Bénévoles
+                </h3>
 
                 {selectedProject === null ? (
-                    <div className="grid lg:grid-cols-2 gap-6 w-full max-w-6xl">
+                    <div className="grid lg:grid-cols-2 gap-8 w-full max-w-6xl">
                         {volunteerProjects.map((proj, idx) => (
                             <div
                                 key={idx}
-                                className="card bg-white/5 border border-white/20 shadow-2xl hover:bg-white/10 cursor-pointer transition p-4 rounded-3xl"
+                                className="group bg-[#1e1e1e] border border-white/10 shadow-xl hover:shadow-blue-900/20 hover:border-blue-500/30 cursor-pointer transition-all duration-300 rounded-3xl overflow-hidden flex flex-col"
                                 data-aos="fade-up"
-                                onClick={() => setSelectedProject(idx)}
+                                data-aos-delay={idx * 100}
+                                onClick={() => handleOpenProject(idx)}
                             >
-                                <figure>
-                                    <img src={proj.img} alt={proj.title} className="rounded-t-lg"/>
+                                <figure className="h-64 w-full overflow-hidden relative">
+                                    <img
+                                        src={proj.img}
+                                        alt={proj.title}
+                                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                    />
+                                    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-all"></div>
                                 </figure>
-                                <div className="p-4">
-                                    <h4 className="text-xl font-bold">{proj.title}</h4>
+                                <div className="p-8 flex-1 flex flex-col justify-between">
+                                    <div>
+                                        <h4 className="text-2xl font-bold mb-2 group-hover:text-blue-400 transition-colors">{proj.title}</h4>
+                                        <p className="text-gray-400 line-clamp-3 text-sm">
+                                            {proj.description.substring(0, 150)}...
+                                        </p>
+                                    </div>
+                                    <div className="mt-6 flex items-center text-blue-400 text-sm font-bold uppercase tracking-wider">
+                                        En savoir plus <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+                                    </div>
                                 </div>
                             </div>
                         ))}
                     </div>
                 ) : (
                     <div
-                        key={selectedProject} // forcer AOS à détecter le changement
-                        className="w-full max-w-5xl text-left rounded-3xl p-12 bg-white/10 shadow-2xl transition-all duration-500"
-                        data-aos="fade-up"
+                        key={`proj-${selectedProject}`}
+                        className="w-full max-w-5xl text-left rounded-3xl p-8 md:p-12 bg-[#1e1e1e] border border-white/10 shadow-2xl transition-all duration-500"
+                        data-aos="zoom-in"
                     >
-                        <h4 className="text-3xl font-bold mb-4">{volunteerProjects[selectedProject].title}</h4>
-                        <p className="whitespace-pre-line text-lg mb-8 text-gray-300">{volunteerProjects[selectedProject].description}</p>
-                        <div className="flex justify-center">
+                        <div className="flex justify-between items-start mb-6">
+                            <h4 className="text-3xl font-bold text-white">{volunteerProjects[selectedProject].title}</h4>
                             <button
-                                className="btn btn-outline text-white rounded-3xl"
+                                className="btn btn-circle btn-outline btn-sm text-white hover:bg-white hover:text-black transition-colors"
                                 onClick={() => setSelectedProject(null)}
                             >
-                                Retour
+                                ✕
+                            </button>
+                        </div>
+
+                        {/* Affichage de l'image en grand dans le détail si souhaité */}
+                        <img
+                            src={volunteerProjects[selectedProject].img}
+                            alt={volunteerProjects[selectedProject].title}
+                            className="w-full h-64 md:h-80 object-cover rounded-2xl mb-8 opacity-80"
+                        />
+
+                        <div className="prose prose-invert max-w-none whitespace-pre-line text-gray-300 leading-relaxed">
+                            {volunteerProjects[selectedProject].description}
+                        </div>
+
+                        <div className="flex justify-center mt-10">
+                            <button
+                                className="px-8 py-3 border border-white/30 rounded-full text-white hover:bg-white hover:text-black transition-all duration-300"
+                                onClick={() => setSelectedProject(null)}
+                            >
+                                Fermer les détails
                             </button>
                         </div>
                     </div>
                 )}
             </section>
+
             {/* Compétences */}
             <section id="compétences"
-                     className="min-h-screen py-16 px-8 flex flex-col items-center justify-center gap-16">
+                     className="min-h-screen py-20 px-8 flex flex-col items-center justify-center gap-16 bg-gradient-to-t from-[#161616] to-[#1a1a1a]">
                 <h3 className="text-4xl font-bold mb-12">Mes Compétences</h3>
-                <div className="flex flex-col lg:flex-row gap-16 w-full max-w-6xl justify-center items-center">
+                <div className="flex flex-col lg:flex-row gap-16 w-full max-w-6xl justify-center items-start">
                     {/* Compétences Techniques */}
-                    <div className="flex-1 flex flex-col items-center">
-                        <h4 className="text-2xl font-semibold mb-6">Compétences Techniques</h4>
-                        <div className="overflow-hidden h-32 w-64 relative">
-                            <div className="animate-scroll-vertical flex flex-col justify-around absolute top-0 h-full">
+                    <div className="flex-1 flex flex-col items-center bg-white/5 p-8 rounded-3xl border border-white/10 w-full">
+                        <h4 className="text-2xl font-semibold mb-8 text-blue-400">Techniques</h4>
+                        <div className="flex flex-wrap justify-center gap-4">
+                            {["PYTHON", "C++", "C", "HTML/CSS", "JS", "JAVA", "POWER BI", "BDD", "PS"].map((skill, idx) => (
+                                <span key={idx} className="px-4 py-2 bg-white/10 rounded-lg font-mono text-sm hover:bg-white/20 transition cursor-default">
+                                    {skill}
+                                </span>
+                            ))}
+                        </div>
+                        {/* Animation verticale conservée mais stylisée */}
+                        <div className="overflow-hidden h-32 w-full relative mt-8 mask-gradient-y">
+                            <div className="animate-scroll-vertical flex flex-col items-center absolute top-0 w-full">
                                 {["PYTHON", "C++", "C", "HTML/CSS", "JS", "JAVA", "POWER BI", "BDD", "PS"].map((skill, idx) => (
-                                    <span key={idx} className="text-3xl font-bold mb-4">{skill}</span>
+                                    <span key={idx} className="text-xl font-bold mb-4 text-gray-500">{skill}</span>
                                 ))}
                             </div>
                         </div>
                     </div>
 
                     {/* Compétences Transversales */}
-                    <div className="flex-1 flex flex-col items-center">
-                        <h4 className="text-2xl font-semibold mb-6">Compétences Transversales</h4>
-                        <div className="overflow-hidden h-32 w-72 relative">
-                            <div className="animate-scroll-vertical flex flex-col justify-around absolute top-0 h-full">
+                    <div className="flex-1 flex flex-col items-center bg-white/5 p-8 rounded-3xl border border-white/10 w-full">
+                        <h4 className="text-2xl font-semibold mb-8 text-green-400">Transversales</h4>
+                        <div className="flex flex-wrap justify-center gap-4">
+                            {["COMMUNICATION", "TRAVAIL D'ÉQUIPE", "LEADERSHIP", "RÉSOLUTION", "ADAPTABILITÉ"].map((skill, idx) => (
+                                <span key={idx} className="px-4 py-2 bg-white/10 rounded-lg font-mono text-sm hover:bg-white/20 transition cursor-default">
+                                    {skill}
+                                </span>
+                            ))}
+                        </div>
+                        <div className="overflow-hidden h-32 w-full relative mt-8 mask-gradient-y">
+                            <div className="animate-scroll-vertical flex flex-col items-center absolute top-0 w-full">
                                 {["COMMUNICATION", "TRAVAIL D'ÉQUIPE", "LEADERSHIP", "RÉSOLUTION PROBLÈMES", "ADAPTABILITÉ", "PENSÉE CRITIQUE"].map((skill, idx) => (
-                                    <span key={idx} className="text-3xl font-bold mb-4">{skill}</span>
+                                    <span key={idx} className="text-xl font-bold mb-4 text-gray-500">{skill}</span>
                                 ))}
                             </div>
                         </div>
@@ -400,7 +485,7 @@ c) Autonomie et prise d’initiative
 
 
             {/* Footer */}
-            <footer className="footer p-10 bg-[#1f1f1f]/80 rounded-t-3xl text-center">
+            <footer className="footer p-10 bg-[#0f0f0f] text-gray-400 text-center border-t border-white/5">
                 <p>© 2025 Delvin Portfolio. Tous droits réservés.</p>
             </footer>
         </div>
