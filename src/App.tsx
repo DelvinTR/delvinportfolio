@@ -260,6 +260,22 @@ c) Autonomie et prise d’initiative
                         l’intelligence artificielle. Je veux utiliser l’IA comme un terrain de jeu pour inventer et
                         construire de nouvelles solutions.
                     </p>
+
+                    <p className={"mb-4 text-gray-300"}>
+                        À travers mon parcours, j'ai compris que l'ingénieur en informatique que je souhaite être demain,
+                        nécessite un esprit critique fort une adaptabilité pour ne jamais rester bloqué face
+                        à un obstacle. Au-delà des compétences techniques, j'apporte aujourd'hui une vraie aisance
+                        relationnelle : la communication et le travail d'équipe sont mes moteurs au quotidien.
+                        Je vois mon futur rôle comme celui d'un ingénieur capable de prendre du leadership pour
+                        transformer des problèmes complexes en solutions concrètes.
+                    </p>
+
+                    <p className ={"mb-4 text-gray-300"}>
+                        D'un point de vue des compétences techniques, je cesse d'apprendre de nouvelles notions que ce soit
+                        en langage informatique, en connaissance général ou en approfondissage de l'IA afin de maîtriser
+                        toutes les technologies qui m'entoureront en tant qu'ingénieur en informatique. Cela me
+                        permettra ainsi de construire les solutions les plus performantes et plus fiables.
+                    </p>
                 </div>
 
                 <div className="lg:w-1/2 flex flex-col items-center gap-8">
